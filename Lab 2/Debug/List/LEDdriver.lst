@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR C/C++ Compiler V6.30.2.940/W32 for MSP430           19/Nov/2015  13:39:18
+# IAR C/C++ Compiler V6.30.2.940/W32 for MSP430           19/Nov/2015  14:57:38
 # Copyright 1996-2015 IAR Systems AB.
 # Standalone license - IAR Embedded Workbench for Texas Instruments MSP430, 8K KickStart Edition 6.30
 #
@@ -75,7 +75,7 @@ H:\My Documents\EE312\TemplateCode\eee312_lab\Lab 2\LEDdriver.c
      37          void refreshLedDial()
      38          {
      39            //Refresh lower bank (LEDs 1-4)
-     40          
+     40           
      41            if (ledValue_==1)
      42              
      43           {      
@@ -85,7 +85,7 @@ H:\My Documents\EE312\TemplateCode\eee312_lab\Lab 2\LEDdriver.c
      47             GPIO_setOutputHighOnPin(GPIO_PORT_P5, GPIO_PIN3);
      48             GPIO_setOutputLowOnPin(GPIO_PORT_P2, GPIO_PIN7);
      49             
-     50          }__delay_cycles(1000);
+     50          }__delay_cycles(10000);
      51            if (ledValue_==2)
      52            {  
      53             GPIO_setOutputLowOnPin(GPIO_PORT_P8, GPIO_PIN0);
@@ -94,7 +94,7 @@ H:\My Documents\EE312\TemplateCode\eee312_lab\Lab 2\LEDdriver.c
      56             GPIO_setOutputLowOnPin(GPIO_PORT_P5, GPIO_PIN3);
      57             GPIO_setOutputLowOnPin(GPIO_PORT_P2, GPIO_PIN7);
      58           
-     59            }__delay_cycles(1000);
+     59            }__delay_cycles(10000);
      60          if   (ledValue_==3)
      61          {
      62             GPIO_setOutputLowOnPin(GPIO_PORT_P8, GPIO_PIN0);
@@ -103,7 +103,7 @@ H:\My Documents\EE312\TemplateCode\eee312_lab\Lab 2\LEDdriver.c
      65             GPIO_setOutputLowOnPin(GPIO_PORT_P5, GPIO_PIN3);
      66             GPIO_setOutputLowOnPin(GPIO_PORT_P2, GPIO_PIN7); 
      67           
-     68          }__delay_cycles(1000);
+     68          }__delay_cycles(10000);
      69          if     (ledValue_==4)
      70          {
      71             GPIO_setOutputHighOnPin(GPIO_PORT_P8, GPIO_PIN0);
@@ -111,7 +111,7 @@ H:\My Documents\EE312\TemplateCode\eee312_lab\Lab 2\LEDdriver.c
      73             GPIO_setOutputLowOnPin(GPIO_PORT_P5,  GPIO_PIN2);
      74             GPIO_setOutputLowOnPin(GPIO_PORT_P5, GPIO_PIN3);
      75             GPIO_setOutputLowOnPin(GPIO_PORT_P2, GPIO_PIN7);
-     76          }__delay_cycles(1000);
+     76          }__delay_cycles(10000);
      77             //Refresh lower bank (LEDs 5-8)
      78            
      79          if     (ledValue_==5)
@@ -121,7 +121,7 @@ H:\My Documents\EE312\TemplateCode\eee312_lab\Lab 2\LEDdriver.c
      83             GPIO_setOutputHighOnPin(GPIO_PORT_P5,  GPIO_PIN2);
      84             GPIO_setOutputHighOnPin(GPIO_PORT_P5, GPIO_PIN3);
      85             GPIO_setOutputHighOnPin(GPIO_PORT_P2, GPIO_PIN7);
-     86          }__delay_cycles(1000);
+     86          }__delay_cycles(10000);
      87          
      88          if     (ledValue_==6)
      89          {
@@ -130,7 +130,7 @@ H:\My Documents\EE312\TemplateCode\eee312_lab\Lab 2\LEDdriver.c
      92             GPIO_setOutputHighOnPin(GPIO_PORT_P5,  GPIO_PIN2);
      93             GPIO_setOutputHighOnPin(GPIO_PORT_P5, GPIO_PIN3);
      94             GPIO_setOutputHighOnPin(GPIO_PORT_P2, GPIO_PIN7);
-     95          }__delay_cycles(1000);
+     95          }__delay_cycles(10000);
      96          
      97          if     (ledValue_==7)
      98          {
@@ -139,7 +139,7 @@ H:\My Documents\EE312\TemplateCode\eee312_lab\Lab 2\LEDdriver.c
     101             GPIO_setOutputLowOnPin(GPIO_PORT_P5,  GPIO_PIN2);
     102             GPIO_setOutputHighOnPin(GPIO_PORT_P5, GPIO_PIN3);
     103             GPIO_setOutputHighOnPin(GPIO_PORT_P2, GPIO_PIN7);
-    104          }__delay_cycles(1000);
+    104          }__delay_cycles(10000);
     105          
     106          if     (ledValue_==8)
     107          {
@@ -148,7 +148,7 @@ H:\My Documents\EE312\TemplateCode\eee312_lab\Lab 2\LEDdriver.c
     110             GPIO_setOutputHighOnPin(GPIO_PORT_P5,  GPIO_PIN2);
     111             GPIO_setOutputLowOnPin(GPIO_PORT_P5, GPIO_PIN3);
     112             GPIO_setOutputHighOnPin(GPIO_PORT_P2, GPIO_PIN7);
-    113          }__delay_cycles(1000);
+    113          }__delay_cycles(10000);
     114           
     115          }
     116          
